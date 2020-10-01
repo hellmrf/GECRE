@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Instruções para o acesso e utilização do Conferência Web</title>
+        <style>
+            @media print {
+                *,
+                *:before,
+                *:after {
+                    background: transparent !important;
+                    color: #000 !important;
+                    box-shadow: none !important;
+                    text-shadow: none !important;
+                }
+
+                a,
+                a:visited {
+                    text-decoration: underline;
+                }
+
+                a[href]:after {
+                    content: " (" attr(href) ")";
+                }
+
+                abbr[title]:after {
+                    content: " (" attr(title) ")";
+                }
+
+                a[href^="#"]:after,
+                a[href^="javascript:"]:after {
+                    content: "";
+                }
+
+                pre,
+                blockquote {
+                    border: 1px solid #999;
+                    page-break-inside: avoid;
+                }
+
+                thead {
+                    display: table-header-group;
+                }
+
+                tr,
+                img {
+                    page-break-inside: avoid;
+                }
+
+                img {
+                    max-width: 100% !important;
+                }
+
+                p,
+                h2,
+                h3 {
+                    orphans: 3;
+                    widows: 3;
+                }
+
+                h2,
+                h3 {
+                    page-break-after: avoid;
+                }
+            }
+
+            html {
+                font-size: 14px;
+            }
+            @media screen and (min-width: 32rem) and (max-width: 48rem) {
+                html {
+                    font-size: 16px;
+                }
+            }
+
+            @media screen and (min-width: 48rem) {
+                html {
+                    font-size: 18px;
+                }
+            }
+
+            body {
+                line-height: 1.85;
+            }
+
+            p,
+            .air-p {
+                font-size: 1rem;
+                margin-bottom: 1.3rem;
+            }
+
+            h1,
+            .air-h1,
+            h2,
+            .air-h2,
+            h3,
+            .air-h3,
+            h4,
+            .air-h4 {
+                margin: 1.414rem 0 0.5rem;
+                font-weight: inherit;
+                line-height: 1.42;
+            }
+
+            h1,
+            .air-h1 {
+                margin-top: 0;
+                font-size: 3.1rem;
+            }
+
+            h2,
+            .air-h2 {
+                font-size: 2.2rem;
+            }
+
+            h3,
+            .air-h3 {
+                font-size: 1.3rem;
+            }
+
+            h4,
+            .air-h4 {
+                font-size: 1.414rem;
+            }
+
+            h5,
+            .air-h5 {
+                font-size: 1.121rem;
+            }
+
+            h6,
+            .air-h6 {
+                font-size: 0.88rem;
+            }
+
+            small,
+            .air-small {
+                font-size: 0.707em;
+            }
+
+            /* https://github.com/mrmrs/fluidity */
+
+            img,
+            canvas,
+            iframe,
+            video,
+            svg,
+            select,
+            textarea {
+                max-width: 100%;
+            }
+
+            @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,300);
+
+            body {
+                color: #444;
+                font-family: "Open Sans", Helvetica, sans-serif;
+                font-weight: 300;
+                margin: 6rem auto 1rem;
+                max-width: 48rem;
+                text-align: center;
+            }
+
+            img {
+                /* border-radius: 50%; */
+                /* height: 200px; */
+                margin: 0 auto;
+            }
+
+            a,
+            a:visited {
+                color: #3498db;
+            }
+
+            a:hover,
+            a:focus,
+            a:active {
+                color: #2980b9;
+            }
+
+            pre {
+                background-color: #fafafa;
+                padding: 1rem;
+                text-align: left;
+            }
+
+            blockquote {
+                margin: 0;
+                border-left: 5px solid #7a7a7a;
+                font-style: italic;
+                padding: 1.33em;
+                text-align: left;
+            }
+
+            ul,
+            ol,
+            li {
+                text-align: left;
+            }
+
+            p {
+                color: #333;
+            }
+        </style>
+    </head>
+    <body id="preview">
+        <h1>I Congresso Nacional de Inovação e Popularização da Ciência</h1>
+        <h2>Instruções para utilização do Conferência Web.</h2>
+
+        <p class="has-line-data" data-line-start="0" data-line-end="1">
+            Olá, palestrante do I Congresso Nacional de Inovação e Popularização
+            da Ciência! No contexto da pandemia do CoVID-19, o evento será
+            realizado de maneira remota. Para isso, utilizaremos a plataforma
+            MConf. Este documento o guiará pelos recursos disponíveis na
+            plataforma, bem como os passos para acesso à mesma.
+        </p>
+        <h2 class="code-line" data-line-start="2" data-line-end="3">
+            <a
+                target="_blank"
+                rel="noreferrer,noopener"
+                id="Orientaes_iniciais_2"
+            ></a
+            >Orientações iniciais
+        </h2>
+        <ul>
+            <li class="has-line-data" data-line-start="4" data-line-end="5">
+                Evite utilizar dispositivos móveis. Apresente a partir de um
+                <em>Desktop</em> (PC) ou <em>Notebook</em>.
+            </li>
+            <li class="has-line-data" data-line-start="5" data-line-end="6">
+                Opte por conexões de internet cabeadas. Caso não seja possível,
+                certifique-se que o sinal <em>wi-fi</em> está forte.
+            </li>
+            <li class="has-line-data">
+                Verifique sua velocidade de conexão com a internet. Uma banda
+                mínima de 2 Mbps é recomendada.
+            </li>
+            <li class="has-line-data" data-line-start="6" data-line-end="7">
+                Evite a utilização do microfone interno do dispositivo. Se for
+                possível, utilize um microfone externo (o que está presente na
+                maioria dos fones de ouvido é o suficiente).
+            </li>
+            <li class="has-line-data" data-line-start="7" data-line-end="10">
+                Com alguma antecedência, teste a compatibilidade do dispositivo
+                que utilizará para apresentar clicando
+                <a
+                    target="_blank"
+                    rel="noreferrer,noopener"
+                    href="https://conferenciaweb.rnp.br/teste"
+                    >aqui</a
+                >
+                ou acessando
+                <a
+                    target="_blank"
+                    rel="noreferrer,noopener"
+                    href="https://conferenciaweb.rnp.br/teste"
+                    >https://conferenciaweb.rnp.br/teste</a
+                >.
+                <ul>
+                    <li
+                        class="has-line-data"
+                        data-line-start="8"
+                        data-line-end="9"
+                    >
+                        Será necessário permitir o acesso do site a diversos
+                        recursos da máquina. Não se preocupe, o serviço é
+                        fornecido pela
+                        <a
+                            target="_blank"
+                            rel="noreferrer,noopener"
+                            href="https://www.rnp.br/"
+                            >Rede Nacional de Ensino e Pesquisa</a
+                        >
+                        e não comprometerá sua segurança.
+                    </li>
+                    <li
+                        class="has-line-data"
+                        data-line-start="9"
+                        data-line-end="10"
+                    >
+                        O aviso sobre IPV6 pode ser ignorado.
+                    </li>
+                </ul>
+            </li>
+            <li class="has-line-data" data-line-start="11" data-line-end="13">
+                Este tutorial foi produzido pensando nos sistemas Windows 10 e
+                Linux e nos navegadores Google Chrome e Mozilla Firefox. Para
+                saber se seu Sistema Operacional e Navegador são compatíveis,
+                visite os
+                <a
+                    target="_blank"
+                    rel="noreferrer,noopener"
+                    href="https://ajuda.rnp.br/conferenciaweb/requisitos-de-uso"
+                    >Requisitos de Uso</a
+                >
+                da plataforma.
+            </li>
+        </ul>
+
+        <h2 class="code-line" data-line-start="13" data-line-end="14">
+            Acompanhe o vídeo
+        </h2>
+        <iframe
+            width="600"
+            height="338"
+            src="https://www.youtube.com/embed/YTmLbTIpKZo"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+        ></iframe>
+        <h2 class="code-line" data-line-start="13" data-line-end="14">
+            <a
+                target="_blank"
+                rel="noreferrer,noopener"
+                id="Acesso__plataforma_13"
+            ></a
+            >Acesso à plataforma
+        </h2>
+        <p class="has-line-data" data-line-start="15" data-line-end="16">
+            Após clicar no link de acesso, você verá a página abaixo. Clique no
+            link <em>Sala Virtual</em> à direita para ingressar na sala.
+        </p>
+        <p class="has-line-data" data-line-start="17" data-line-end="18">
+            <img src="https://i.imgur.com/BKmgA0e.png" alt="Tela inicial" />
+        </p>
+        <p class="has-line-data" data-line-start="19" data-line-end="20">
+            Será necessário fazer login de alguma forma. Você tem algumas
+            opções. Rolando a tela, você poderá escolher fazer login com uma
+            Conta Federada (mesmo login da Instituição de origem), com uma conta
+            não federada (seja por email, Facebook ou Google) ou, ainda, apenas
+            digitando o nome completo no campo adequado, conforme imagem abaixo.
+        </p>
+        <p class="has-line-data" data-line-start="21" data-line-end="22">
+            <img src="https://i.imgur.com/NSY8eHJ.png" alt="" />
+        </p>
+        <p class="has-line-data" data-line-start="23" data-line-end="24">
+            No caso do acesso via Comunidade Acadêmica Federada (CAFe), que
+            recomendamos, clique em <em>Entrar</em>. No campo adequado (imagem
+            abaixo), comece a digitar o nome ou sigla de sua Instituição e a
+            selecione.
+        </p>
+        <p class="has-line-data" data-line-start="25" data-line-end="26">
+            <img src="https://i.imgur.com/ZJAnd1h.png" alt="" />
+        </p>
+        <p class="has-line-data" data-line-start="27" data-line-end="28">
+            Na próxima tela, faça o login com as mesmas credenciais utilizadas
+            na sua Instituição e clique em Login. Confira as informações e
+            clique em <em>Aceitar</em>.
+        </p>
+        <p class="has-line-data" data-line-start="29" data-line-end="30">
+            <img src="https://i.imgur.com/f64J1Tn.png" alt="" />
+        </p>
+        <p class="has-line-data" data-line-start="31" data-line-end="32">
+            Você verá a mesma tela apresentada anteriormente, mas agora com seu
+            nome completo. Clique em <em>Confirmar</em> para acessar a sala.
+        </p>
+        <h2 class="code-line" data-line-start="33" data-line-end="34">
+            <a
+                target="_blank"
+                rel="noreferrer,noopener"
+                id="Configuraes_iniciais_33"
+            ></a
+            >Configurações iniciais
+        </h2>
+        <p class="has-line-data" data-line-start="34" data-line-end="35">
+            Ao entrar na sala, você precisa aguardar a aprovação de um
+            moderador.
+        </p>
+        <p class="has-line-data" data-line-start="36" data-line-end="37">
+            <img src="https://i.imgur.com/VZXIxe2.png" alt="" />
+        </p>
+        <p class="has-line-data" data-line-start="38" data-line-end="39">
+            Após isso, será necessário escolher a opção <em>Microfone</em> e
+            permitir que o site use seu dispositivo. Um teste de áudio será
+            feito. Fale algo e veja se está se ouvindo bem e clique no botão
+            adequado.
+        </p>
+        <p class="has-line-data" data-line-start="40" data-line-end="42">
+            <img src="https://i.imgur.com/MPlmIH9.png" alt="" /><br />
+            <img src="https://i.imgur.com/vega9kK.png" alt="" />
+        </p>
+        <h2 class="code-line" data-line-start="43" data-line-end="44">
+            <a
+                target="_blank"
+                rel="noreferrer,noopener"
+                id="Utilizando_a_plataforma_43"
+            ></a
+            >Utilizando a plataforma
+        </h2>
+        <p class="has-line-data" data-line-start="44" data-line-end="45">
+            Esta é a interface da plataforma. Descreveremos cada botão na
+            sequência.
+        </p>
+        <p class="has-line-data" data-line-start="46" data-line-end="47">
+            <img src="https://i.imgur.com/mfRq0yo.png" alt="" />
+        </p>
+        <ol>
+            <li class="has-line-data" data-line-start="48" data-line-end="49">
+                Botão para ativar ou desativar o microfone.
+            </li>
+            <li class="has-line-data" data-line-start="49" data-line-end="50">
+                Botão para ativar ou desativar a câmera.
+            </li>
+            <li class="has-line-data" data-line-start="50" data-line-end="51">
+                Botão para ativar ou desativar o compartilhamento de tela.
+            </li>
+            <li class="has-line-data" data-line-start="51" data-line-end="52">
+                Botão para mostrar ou ocultar a apresentação de slides.
+            </li>
+            <li class="has-line-data" data-line-start="52" data-line-end="54">
+                Botão “Ações”
+            </li>
+        </ol>
+        <p class="has-line-data" data-line-start="54" data-line-end="55">
+            Atente-se que, para os botões 1-4, o preenchimento em azul indica
+            que está ativado.
+        </p>
+        <p class="has-line-data" data-line-start="56" data-line-end="57">
+            No botão Ações, será possível iniciar uma enquete, mas isso não será
+            útil, já que a maioria dos ouvintes não estará na sala
+            <em>de facto</em>, mas assistindo a uma transmissão. As demais
+            opções são úteis:
+        </p>
+        <p class="has-line-data" data-line-start="58" data-line-end="59">
+            <img src="https://i.imgur.com/Fy8OVDc.png" alt="" />
+        </p>
+        <ol start="6">
+            <li class="has-line-data" data-line-start="60" data-line-end="61">
+                <p
+                    class="has-line-data"
+                    data-line-start="60"
+                    data-line-end="61"
+                >
+                    Fazer <em>upload</em> de uma apresentação (não se preocupe,
+                    a equipe já terá feito isso para você);
+                </p>
+            </li>
+            <li class="has-line-data" data-line-start="61" data-line-end="64">
+                <p
+                    class="has-line-data"
+                    data-line-start="61"
+                    data-line-end="63"
+                >
+                    Compartilhar o link de um vídeo externo (YouTube, Vimeo,
+                    Instructure Media, Twitch e Daily Motion). Dessa forma, o
+                    vídeo será exibido com maior qualidade do que através do
+                    compartilhamento de tela, por exemplo.<br />
+                    – Para parar de compartilhar o vídeo, volte ao mesmo menu.
+                </p>
+            </li>
+            <li class="has-line-data" data-line-start="64" data-line-end="65">
+                <p
+                    class="has-line-data"
+                    data-line-start="64"
+                    data-line-end="65"
+                >
+                    Abrir tela de anotações.
+                </p>
+            </li>
+        </ol>
+        <h2 class="code-line" data-line-start="67" data-line-end="68">
+            <a
+                target="_blank"
+                rel="noreferrer,noopener"
+                id="Modo_de_apresentaes_67"
+            ></a
+            >Modo de apresentações
+        </h2>
+        <p class="has-line-data" data-line-start="69" data-line-end="70">
+            Com a apresentação aberta, algumas ferramentas estão disponíveis.
+            Controle seus slides na barra inferior. Você pode utilizar os botões
+            de <em>zoom</em> e a ferramenta “Mão” para mover a apresentação.
+            Para retornar ao <em>zoom</em> padrão, clique sobre a indicação (por
+            exemplo, <em>150%</em>).
+        </p>
+        <p class="has-line-data" data-line-start="71" data-line-end="72">
+            <img src="https://i.imgur.com/CtkEgs3.png" alt="" />
+        </p>
+        <h2 class="code-line" data-line-start="73" data-line-end="74">
+            <a
+                target="_blank"
+                rel="noreferrer,noopener"
+                id="Apontador_laser_73"
+            ></a
+            >Apontador <em>laser</em>
+        </h2>
+        <p class="has-line-data" data-line-start="74" data-line-end="75">
+            Por padrão, você verá um círculo vermelho abaixo do seu cursor
+            quando estiver em cima da apresentação. Isso pode ser utilizado como
+            um apontador <em>laser</em>, já que estará visível para todos os
+            ouvintes.
+        </p>
+        <h2 class="code-line" data-line-start="76" data-line-end="77">
+            <a
+                target="_blank"
+                rel="noreferrer,noopener"
+                id="Barra_de_ferramentas_76"
+            ></a
+            >Barra de ferramentas
+        </h2>
+        <p class="has-line-data" data-line-start="77" data-line-end="78">
+            Na barra de ferramentas à direita, você poderá:
+        </p>
+        <p class="has-line-data" data-line-start="79" data-line-end="80">
+            <img src="https://i.imgur.com/Dd0eERw.png" alt="" />
+        </p>
+        <ol>
+            <li class="has-line-data" data-line-start="81" data-line-end="82">
+                Escolher a ferramenta ativa;
+            </li>
+            <li class="has-line-data" data-line-start="82" data-line-end="83">
+                Desfazer a última anotação;
+            </li>
+            <li class="has-line-data" data-line-start="83" data-line-end="85">
+                Apagar todas as anotações.
+            </li>
+        </ol>
+        <p class="has-line-data" data-line-start="85" data-line-end="86">
+            Clique no seletor de ferramentas para visualizá-las. Com uma
+            ferramenta selecionada será possível, além das opções anteriores:
+        </p>
+        <p class="has-line-data" data-line-start="87" data-line-end="88">
+            <img src="https://i.imgur.com/i9qMOIn.png" alt="" />
+        </p>
+        <ol start="4">
+            <li class="has-line-data" data-line-start="89" data-line-end="90">
+                Mudar a espessura da ferramenta;
+            </li>
+            <li class="has-line-data" data-line-start="90" data-line-end="92">
+                Mudar a cor.
+            </li>
+        </ol>
+        <p class="has-line-data" data-line-start="92" data-line-end="93">
+            Para utilizá-las, simplesmente clique e arraste sobre o slide. Todos
+            os ouvintes verão suas anotações e marcações em tempo real.
+        </p>
+        <h2 class="code-line" data-line-start="94" data-line-end="95">
+            <a
+                target="_blank"
+                rel="noreferrer,noopener"
+                id="Orientaes_mais_detalhadas_94"
+            ></a
+            >Orientações mais detalhadas
+        </h2>
+        <p class="has-line-data" data-line-start="95" data-line-end="96">
+            Caso queira ter acesso às instruções detalhadas da plataforma, leia
+            o
+            <a
+                target="_blank"
+                rel="noreferrer,noopener"
+                href="https://ajuda.rnp.br/conferenciaweb/manuais-de-uso-do-servico/manual-do-usuario/configuracoes-basicas"
+                >Manual de Uso</a
+            >.
+        </p>
+    </body>
+</html>
